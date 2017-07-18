@@ -1,0 +1,13 @@
+default: &default
+  title: Site Title
+  description: Site Description
+  made_by: John Doe
+  year: 2017
+
+development:
+  <<: *default
+  url: http://localhost:3000
+
+production:
+  <<: *default
+  url: https://example.com
