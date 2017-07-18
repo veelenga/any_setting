@@ -1,0 +1,13 @@
+default: &default
+  title: Site Title
+  description: Site Description
+  made_by: John Doe
+  year: <%= Time.now.year %>
+
+development:
+  <<: *default
+  url: http://localhost:3000
+
+production:
+  <<: *default
+  url: https://example.com
